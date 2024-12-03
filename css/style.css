@@ -1,16 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-    /* display: flex; */
     width: 1440px;
     height: 1024px;
     padding: 69px 119px 68px 119px;
-    /* justify-content: center; */
-    align-items: center;
-    background-color: lightgreen;
 }
 
 .section{
@@ -74,5 +71,93 @@
     display: inline-block;
     vertical-align: top;
     padding: 10px 30px;
-    /* background-image: url(/img/arrow-right.svg); */
+}
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-2{
+    display: inline-block;
+    color: #3D3D3D;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 15px;
+    margin-top: 138px;
+}
+
+.blog-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    gap: 43px;
+
+}
+
+.card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: #FBFBFB;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 14px;
+    align-items: flex-start;
+
+}
+
+.time{
+    color: #46A358;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; 
+}
+
+.advice{
+    color: #3D3D3D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.info{
+    display: inline-block;
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 9px;
+}
+ 
+.link{
+    display: inline-block; 
+    padding-right: 15px;
+    margin-bottom: 13px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    background-image: url('../img/arrow-2.svg');
+    background-repeat: no-repeat;
+    background-position: right center; 
+}
+
+.link:hover{
+    color: #46A358;
+    background-image: url(../img/arrow-green.svg);
 }
