@@ -102,6 +102,21 @@
     margin: 0 18px;
 }
 
+.shopping-cart{
+    position: relative;
+}
+
+.shopping-cart span{
+    color: #FFF;
+    padding: 1px 5px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    background-color: #46A358;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+}
+
 .right-buttons a{
     border-radius: 6px;
     background-color: #46A358;
@@ -272,6 +287,56 @@
     height: 300px;
     align-items: center;
     margin-bottom: 12px;
+    position: relative;
+    border-top: 2px solid transparent;
+}
+
+.card-inset:hover{
+    border-top: 2px solid #46A358;
+}
+
+.sale-13{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 8px;
+    top: 14px;
+    left: 0;
+    background-color: #46A358;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.box-button{
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 134px;
+    justify-content: space-between;
+}
+
+.card-inset:hover .box-button{
+    display: flex;
+}
+
+.btn{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover path{
+    fill: #46A358;
 }
 
 .card h3{
@@ -324,6 +389,10 @@
 
 .next-page:hover{
     background-color: #46A358;
+}
+
+.next-page:hover path{
+    stroke: #E5E5E5;
 }
 
 .block-of-two{
@@ -459,4 +528,8 @@
     align-items: center;
     display: flex;
     align-items: center;
+}
+
+.blog-text a:hover{
+    color: #46A358;
 }
